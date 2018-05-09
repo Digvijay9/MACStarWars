@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BD1FEC720A2D4AC00A9F6D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1FEC620A2D4AC00A9F6D2 /* AppDelegate.swift */; };
+		1BD1FEC920A2D4AC00A9F6D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1FEC820A2D4AC00A9F6D2 /* ViewController.swift */; };
+		1BD1FECC20A2D4AC00A9F6D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BD1FECA20A2D4AC00A9F6D2 /* Main.storyboard */; };
+		1BD1FECF20A2D4AC00A9F6D2 /* MACStarWars.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1FECD20A2D4AC00A9F6D2 /* MACStarWars.xcdatamodeld */; };
+		1BD1FED120A2D4AC00A9F6D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BD1FED020A2D4AC00A9F6D2 /* Assets.xcassets */; };
+		1BD1FED420A2D4AC00A9F6D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BD1FED220A2D4AC00A9F6D2 /* LaunchScreen.storyboard */; };
+		1BD1FEDF20A2D4AC00A9F6D2 /* MACStarWarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1FEDE20A2D4AC00A9F6D2 /* MACStarWarsTests.swift */; };
+		1BD1FEEA20A2D4AC00A9F6D2 /* MACStarWarsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1FEE920A2D4AC00A9F6D2 /* MACStarWarsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BD1FEDB20A2D4AC00A9F6D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BD1FEBB20A2D4AB00A9F6D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BD1FEC220A2D4AC00A9F6D2;
+			remoteInfo = MACStarWars;
+		};
+		1BD1FEE620A2D4AC00A9F6D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BD1FEBB20A2D4AB00A9F6D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BD1FEC220A2D4AC00A9F6D2;
+			remoteInfo = MACStarWars;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1BD1FEC320A2D4AC00A9F6D2 /* MACStarWars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MACStarWars.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BD1FEC620A2D4AC00A9F6D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1BD1FEC820A2D4AC00A9F6D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1BD1FECB20A2D4AC00A9F6D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1BD1FECE20A2D4AC00A9F6D2 /* MACStarWars.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MACStarWars.xcdatamodel; sourceTree = "<group>"; };
+		1BD1FED020A2D4AC00A9F6D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1BD1FED320A2D4AC00A9F6D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1BD1FED520A2D4AC00A9F6D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BD1FEDA20A2D4AC00A9F6D2 /* MACStarWarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MACStarWarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BD1FEDE20A2D4AC00A9F6D2 /* MACStarWarsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MACStarWarsTests.swift; sourceTree = "<group>"; };
+		1BD1FEE020A2D4AC00A9F6D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BD1FEE520A2D4AC00A9F6D2 /* MACStarWarsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MACStarWarsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BD1FEE920A2D4AC00A9F6D2 /* MACStarWarsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MACStarWarsUITests.swift; sourceTree = "<group>"; };
+		1BD1FEEB20A2D4AC00A9F6D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BD1FEC020A2D4AC00A9F6D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BD1FED720A2D4AC00A9F6D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BD1FEE220A2D4AC00A9F6D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BD1FEBA20A2D4AB00A9F6D2 = {
+			isa = PBXGroup;
+			children = (
+				1BD1FEC520A2D4AC00A9F6D2 /* MACStarWars */,
+				1BD1FEDD20A2D4AC00A9F6D2 /* MACStarWarsTests */,
+				1BD1FEE820A2D4AC00A9F6D2 /* MACStarWarsUITests */,
+				1BD1FEC420A2D4AC00A9F6D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1BD1FEC420A2D4AC00A9F6D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BD1FEC320A2D4AC00A9F6D2 /* MACStarWars.app */,
+				1BD1FEDA20A2D4AC00A9F6D2 /* MACStarWarsTests.xctest */,
+				1BD1FEE520A2D4AC00A9F6D2 /* MACStarWarsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BD1FEC520A2D4AC00A9F6D2 /* MACStarWars */ = {
+			isa = PBXGroup;
+			children = (
+				1BD1FEC620A2D4AC00A9F6D2 /* AppDelegate.swift */,
+				1BD1FEC820A2D4AC00A9F6D2 /* ViewController.swift */,
+				1BD1FECA20A2D4AC00A9F6D2 /* Main.storyboard */,
+				1BD1FED020A2D4AC00A9F6D2 /* Assets.xcassets */,
+				1BD1FED220A2D4AC00A9F6D2 /* LaunchScreen.storyboard */,
+				1BD1FED520A2D4AC00A9F6D2 /* Info.plist */,
+				1BD1FECD20A2D4AC00A9F6D2 /* MACStarWars.xcdatamodeld */,
+			);
+			path = MACStarWars;
+			sourceTree = "<group>";
+		};
+		1BD1FEDD20A2D4AC00A9F6D2 /* MACStarWarsTests */ = {
+			isa = PBXGroup;
+			children = (
+				1BD1FEDE20A2D4AC00A9F6D2 /* MACStarWarsTests.swift */,
+				1BD1FEE020A2D4AC00A9F6D2 /* Info.plist */,
+			);
+			path = MACStarWarsTests;
+			sourceTree = "<group>";
+		};
+		1BD1FEE820A2D4AC00A9F6D2 /* MACStarWarsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1BD1FEE920A2D4AC00A9F6D2 /* MACStarWarsUITests.swift */,
+				1BD1FEEB20A2D4AC00A9F6D2 /* Info.plist */,
+			);
+			path = MACStarWarsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BD1FEC220A2D4AC00A9F6D2 /* MACStarWars */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BD1FEEE20A2D4AC00A9F6D2 /* Build configuration list for PBXNativeTarget "MACStarWars" */;
+			buildPhases = (
+				1BD1FEBF20A2D4AC00A9F6D2 /* Sources */,
+				1BD1FEC020A2D4AC00A9F6D2 /* Frameworks */,
+				1BD1FEC120A2D4AC00A9F6D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MACStarWars;
+			productName = MACStarWars;
+			productReference = 1BD1FEC320A2D4AC00A9F6D2 /* MACStarWars.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1BD1FED920A2D4AC00A9F6D2 /* MACStarWarsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BD1FEF120A2D4AC00A9F6D2 /* Build configuration list for PBXNativeTarget "MACStarWarsTests" */;
+			buildPhases = (
+				1BD1FED620A2D4AC00A9F6D2 /* Sources */,
+				1BD1FED720A2D4AC00A9F6D2 /* Frameworks */,
+				1BD1FED820A2D4AC00A9F6D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BD1FEDC20A2D4AC00A9F6D2 /* PBXTargetDependency */,
+			);
+			name = MACStarWarsTests;
+			productName = MACStarWarsTests;
+			productReference = 1BD1FEDA20A2D4AC00A9F6D2 /* MACStarWarsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1BD1FEE420A2D4AC00A9F6D2 /* MACStarWarsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BD1FEF420A2D4AC00A9F6D2 /* Build configuration list for PBXNativeTarget "MACStarWarsUITests" */;
+			buildPhases = (
+				1BD1FEE120A2D4AC00A9F6D2 /* Sources */,
+				1BD1FEE220A2D4AC00A9F6D2 /* Frameworks */,
+				1BD1FEE320A2D4AC00A9F6D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BD1FEE720A2D4AC00A9F6D2 /* PBXTargetDependency */,
+			);
+			name = MACStarWarsUITests;
+			productName = MACStarWarsUITests;
+			productReference = 1BD1FEE520A2D4AC00A9F6D2 /* MACStarWarsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BD1FEBB20A2D4AB00A9F6D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "digvijay mallegowda";
+				TargetAttributes = {
+					1BD1FEC220A2D4AC00A9F6D2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					1BD1FED920A2D4AC00A9F6D2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1BD1FEC220A2D4AC00A9F6D2;
+					};
+					1BD1FEE420A2D4AC00A9F6D2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1BD1FEC220A2D4AC00A9F6D2;
+					};
+				};
+			};
+			buildConfigurationList = 1BD1FEBE20A2D4AB00A9F6D2 /* Build configuration list for PBXProject "MACStarWars" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1BD1FEBA20A2D4AB00A9F6D2;
+			productRefGroup = 1BD1FEC420A2D4AC00A9F6D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BD1FEC220A2D4AC00A9F6D2 /* MACStarWars */,
+				1BD1FED920A2D4AC00A9F6D2 /* MACStarWarsTests */,
+				1BD1FEE420A2D4AC00A9F6D2 /* MACStarWarsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BD1FEC120A2D4AC00A9F6D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BD1FED420A2D4AC00A9F6D2 /* LaunchScreen.storyboard in Resources */,
+				1BD1FED120A2D4AC00A9F6D2 /* Assets.xcassets in Resources */,
+				1BD1FECC20A2D4AC00A9F6D2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BD1FED820A2D4AC00A9F6D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BD1FEE320A2D4AC00A9F6D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BD1FEBF20A2D4AC00A9F6D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BD1FEC920A2D4AC00A9F6D2 /* ViewController.swift in Sources */,
+				1BD1FEC720A2D4AC00A9F6D2 /* AppDelegate.swift in Sources */,
+				1BD1FECF20A2D4AC00A9F6D2 /* MACStarWars.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BD1FED620A2D4AC00A9F6D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BD1FEDF20A2D4AC00A9F6D2 /* MACStarWarsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BD1FEE120A2D4AC00A9F6D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BD1FEEA20A2D4AC00A9F6D2 /* MACStarWarsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1BD1FEDC20A2D4AC00A9F6D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BD1FEC220A2D4AC00A9F6D2 /* MACStarWars */;
+			targetProxy = 1BD1FEDB20A2D4AC00A9F6D2 /* PBXContainerItemProxy */;
+		};
+		1BD1FEE720A2D4AC00A9F6D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BD1FEC220A2D4AC00A9F6D2 /* MACStarWars */;
+			targetProxy = 1BD1FEE620A2D4AC00A9F6D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1BD1FECA20A2D4AC00A9F6D2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BD1FECB20A2D4AC00A9F6D2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1BD1FED220A2D4AC00A9F6D2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BD1FED320A2D4AC00A9F6D2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1BD1FEEC20A2D4AC00A9F6D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1BD1FEED20A2D4AC00A9F6D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1BD1FEEF20A2D4AC00A9F6D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VBM7T75MZ;
+				INFOPLIST_FILE = MACStarWars/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vijay.MACStarWars;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1BD1FEF020A2D4AC00A9F6D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VBM7T75MZ;
+				INFOPLIST_FILE = MACStarWars/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vijay.MACStarWars;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1BD1FEF220A2D4AC00A9F6D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VBM7T75MZ;
+				INFOPLIST_FILE = MACStarWarsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vijay.MACStarWarsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MACStarWars.app/MACStarWars";
+			};
+			name = Debug;
+		};
+		1BD1FEF320A2D4AC00A9F6D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VBM7T75MZ;
+				INFOPLIST_FILE = MACStarWarsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vijay.MACStarWarsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MACStarWars.app/MACStarWars";
+			};
+			name = Release;
+		};
+		1BD1FEF520A2D4AC00A9F6D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VBM7T75MZ;
+				INFOPLIST_FILE = MACStarWarsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vijay.MACStarWarsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MACStarWars;
+			};
+			name = Debug;
+		};
+		1BD1FEF620A2D4AC00A9F6D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VBM7T75MZ;
+				INFOPLIST_FILE = MACStarWarsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vijay.MACStarWarsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MACStarWars;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BD1FEBE20A2D4AB00A9F6D2 /* Build configuration list for PBXProject "MACStarWars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BD1FEEC20A2D4AC00A9F6D2 /* Debug */,
+				1BD1FEED20A2D4AC00A9F6D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BD1FEEE20A2D4AC00A9F6D2 /* Build configuration list for PBXNativeTarget "MACStarWars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BD1FEEF20A2D4AC00A9F6D2 /* Debug */,
+				1BD1FEF020A2D4AC00A9F6D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BD1FEF120A2D4AC00A9F6D2 /* Build configuration list for PBXNativeTarget "MACStarWarsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BD1FEF220A2D4AC00A9F6D2 /* Debug */,
+				1BD1FEF320A2D4AC00A9F6D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BD1FEF420A2D4AC00A9F6D2 /* Build configuration list for PBXNativeTarget "MACStarWarsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BD1FEF520A2D4AC00A9F6D2 /* Debug */,
+				1BD1FEF620A2D4AC00A9F6D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1BD1FECD20A2D4AC00A9F6D2 /* MACStarWars.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1BD1FECE20A2D4AC00A9F6D2 /* MACStarWars.xcdatamodel */,
+			);
+			currentVersion = 1BD1FECE20A2D4AC00A9F6D2 /* MACStarWars.xcdatamodel */;
+			path = MACStarWars.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1BD1FEBB20A2D4AB00A9F6D2 /* Project object */;
+}
