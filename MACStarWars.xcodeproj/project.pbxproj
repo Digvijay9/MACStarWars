@@ -15,6 +15,8 @@
 		1BD1FED420A2D4AC00A9F6D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BD1FED220A2D4AC00A9F6D2 /* LaunchScreen.storyboard */; };
 		1BD1FEDF20A2D4AC00A9F6D2 /* MACStarWarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1FEDE20A2D4AC00A9F6D2 /* MACStarWarsTests.swift */; };
 		1BD1FEEA20A2D4AC00A9F6D2 /* MACStarWarsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1FEE920A2D4AC00A9F6D2 /* MACStarWarsUITests.swift */; };
+		1BD1FEF920A43DF800A9F6D2 /* TabBarcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1FEF820A43DF800A9F6D2 /* TabBarcontroller.swift */; };
+		1BD1FEFC20A4498800A9F6D2 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1FEFA20A4498800A9F6D2 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		1BD1FEE520A2D4AC00A9F6D2 /* MACStarWarsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MACStarWarsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BD1FEE920A2D4AC00A9F6D2 /* MACStarWarsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MACStarWarsUITests.swift; sourceTree = "<group>"; };
 		1BD1FEEB20A2D4AC00A9F6D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BD1FEF820A43DF800A9F6D2 /* TabBarcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarcontroller.swift; sourceTree = "<group>"; };
+		1BD1FEFA20A4498800A9F6D2 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		1BD1FEC520A2D4AC00A9F6D2 /* MACStarWars */ = {
 			isa = PBXGroup;
 			children = (
+				1BD1FEF720A43DA400A9F6D2 /* View */,
 				1BD1FEC620A2D4AC00A9F6D2 /* AppDelegate.swift */,
 				1BD1FEC820A2D4AC00A9F6D2 /* ViewController.swift */,
 				1BD1FECA20A2D4AC00A9F6D2 /* Main.storyboard */,
@@ -126,6 +131,15 @@
 				1BD1FEEB20A2D4AC00A9F6D2 /* Info.plist */,
 			);
 			path = MACStarWarsUITests;
+			sourceTree = "<group>";
+		};
+		1BD1FEF720A43DA400A9F6D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1BD1FEF820A43DF800A9F6D2 /* TabBarcontroller.swift */,
+				1BD1FEFA20A4498800A9F6D2 /* TableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +276,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BD1FEFC20A4498800A9F6D2 /* TableViewCell.swift in Sources */,
 				1BD1FEC920A2D4AC00A9F6D2 /* ViewController.swift in Sources */,
+				1BD1FEF920A43DF800A9F6D2 /* TabBarcontroller.swift in Sources */,
 				1BD1FEC720A2D4AC00A9F6D2 /* AppDelegate.swift in Sources */,
 				1BD1FECF20A2D4AC00A9F6D2 /* MACStarWars.xcdatamodeld in Sources */,
 			);
