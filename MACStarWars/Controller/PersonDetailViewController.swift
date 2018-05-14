@@ -86,14 +86,14 @@ class PersonDetailViewController: UIViewController {
                     return
                 }
                 DispatchQueue.main.async {
-                    self.homeworld.text = details.name
-                    self.gender.text = details.gender
-                    self.height.text = details.height
-                    self.mass.text = details.mass
-                    self.birth_year.text = details.birth_year
-                    self.eye_color.text = details.eye_color
-                    self.skin_color.text = details.skin_color
-                    self.hair_color.text = details.hair_color
+                    self.homeworld.text = "Name : " + details.name
+                    self.gender.text = "Gender : " + details.gender
+                    self.height.text = "Height : " + details.height
+                    self.mass.text = "Mass : " + details.mass
+                    self.birth_year.text = "Birth Year : " + details.birth_year
+                    self.eye_color.text = "Eye Color : " + details.eye_color
+                    self.skin_color.text = "Skin Color" + details.skin_color
+                    self.hair_color.text = "Hair Color" + details.hair_color
                     if let movies = details.films{
                         self.films = movies.map{$0}
                     }
