@@ -9,8 +9,9 @@
 import UIKit
 import CoreData
 
-class StarShipTableViewCell: UITableViewCell {
+class FavouriteTableViewCell: UITableViewCell {
     weak var delegate: CustomCellUpdater?
+    var people : People!
     var index : Int!
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -39,7 +40,6 @@ class StarShipTableViewCell: UITableViewCell {
         let set = UILabel()
         set.clipsToBounds = true
         set.font = UIFont.systemFont(ofSize: 16)
-        //        set.backgroundColor = .red
         set.translatesAutoresizingMaskIntoConstraints = false
         return set
     }()
@@ -71,9 +71,31 @@ class StarShipTableViewCell: UITableViewCell {
                                      favButton.centerYAnchor.constraint(equalTo: self.centerYAnchor),
                                      favButton.heightAnchor.constraint(equalToConstant: 30)])
     }
+    
+    private var cellSess = URLSession(configuration: .default)
+    func configureCell(){
+        let url = Mics.getImageUrl(for: people.name)
+        cellSess = URLSession(configuration: .default)
+        NetworkService.getImage(from: url, session: cellSess) { (err, img) in
+            if err == nil {
+                DispatchQueue.main.async {
+                    if let image = img {
+                        self.imagePerson.image = image
+                    }
+                    
+                }
+            }
+        }
+        
+    }
+    func unLoadCell() {
+        cellSess.invalidateAndCancel()
+    }
+
 }
 
-extension StarShipTableViewCell {
+extension FavouriteTableViewCell {
+    
     @objc func butClick(_ sender : UIButton) {
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -83,7 +105,7 @@ extension StarShipTableViewCell {
         request.returnsObjectsAsFaults = false
         do {
             let result = try context.fetch(request) as! [PeopleFav]
-            print(index)
+           
             let todelete = result[index]
             context.delete(todelete)
 //            for data in result as! [NSManagedObject] {

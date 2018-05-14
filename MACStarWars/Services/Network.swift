@@ -127,7 +127,7 @@ class NetworkService {
             
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: urll) { (data, resp, err) in
-                if let error = err{
+                 if err != nil{
                     
                     return
                 }
@@ -225,7 +225,7 @@ class NetworkService {
         
         let session = URLSession(configuration: .default)
         let task = session.dataTask(with: urll) { (data, resp, err) in
-            if let error = err{
+             if err != nil{
                 
                 return
             }
@@ -264,6 +264,110 @@ class NetworkService {
         task.resume()
         
         
+        
+    }
+    
+    class func getPlanetDetails(from url : String , completion :@escaping (Error?, PlanetDetais?)->()) {
+
+        guard let urll = URL(string : url) else {   return }
+        
+        
+        let session = URLSession(configuration: .default)
+        let task = session.dataTask(with: urll) { (data, resp, err) in
+             if err != nil{return }
+            //                        guard let httpsResp = (resp as? HTTPURLResponse)?.statusCode else {
+            //                            completion(ParsingError.badResponse("Response problem"), nil)
+            //                            return
+            //                        }
+            //
+            //                        guard 200-205 ~= httpsResp else {
+            //                            completion(ParsingError.badResponse("Status Code problem "), nil)
+            //                            return
+            //                        }
+            //                        print("\(httpsResp)")
+            
+            guard let datas = data else{return}
+            
+            do{
+                
+                let gotModel = try JSONDecoder().decode(PlanetDetais.self, from: datas)
+                completion(nil, gotModel)
+                
+            }catch let err {
+                completion(err, nil)
+                print("error in network")
+            }
+        }
+        task.resume()
+        
+    }
+    
+    class func getVehiclesDetails(from url : String , completion :@escaping (Error?, VehiclesDetails?)->()) {
+        
+        guard let urll = URL(string : url) else {   return }
+        
+        
+        let session = URLSession(configuration: .default)
+        let task = session.dataTask(with: urll) { (data, resp, err) in
+              if err != nil{return }
+            //                        guard let httpsResp = (resp as? HTTPURLResponse)?.statusCode else {
+            //                            completion(ParsingError.badResponse("Response problem"), nil)
+            //                            return
+            //                        }
+            //
+            //                        guard 200-205 ~= httpsResp else {
+            //                            completion(ParsingError.badResponse("Status Code problem "), nil)
+            //                            return
+            //                        }
+            //                        print("\(httpsResp)")
+            
+            guard let datas = data else{return}
+            
+            do{
+                
+                let gotModel = try JSONDecoder().decode(VehiclesDetails.self, from: datas)
+                completion(nil, gotModel)
+                
+            }catch let err {
+                completion(err, nil)
+                print("error in network")
+            }
+        }
+        task.resume()
+        
+    }
+    class func gettStarShipDetails(from url : String , completion :@escaping (Error?, StarShipDetails?)->()) {
+        
+        guard let urll = URL(string : url) else {   return }
+        
+        
+        let session = URLSession(configuration: .default)
+        let task = session.dataTask(with: urll) { (data, resp, err) in
+              if err != nil{return }
+            //                        guard let httpsResp = (resp as? HTTPURLResponse)?.statusCode else {
+            //                            completion(ParsingError.badResponse("Response problem"), nil)
+            //                            return
+            //                        }
+            //
+            //                        guard 200-205 ~= httpsResp else {
+            //                            completion(ParsingError.badResponse("Status Code problem "), nil)
+            //                            return
+            //                        }
+            //                        print("\(httpsResp)")
+            
+            guard let datas = data else{return}
+            
+            do{
+                
+                let gotModel = try JSONDecoder().decode(StarShipDetails.self, from: datas)
+                completion(nil, gotModel)
+                
+            }catch let err {
+                completion(err, nil)
+                print("error in network")
+            }
+        }
+        task.resume()
         
     }
     

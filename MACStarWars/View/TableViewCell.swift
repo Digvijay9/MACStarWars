@@ -11,6 +11,8 @@ import CoreData
 
 class TableViewCell: UITableViewCell {
     var people : People!
+    var id : String!
+    var index : Int!
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.backgroundColor = .white
@@ -66,9 +68,37 @@ class TableViewCell: UITableViewCell {
             favButton.setImage(#imageLiteral(resourceName: "FavFlip.png"), for: .normal)
             
         }else{
-            isFav = false
-            favButton.setImage(#imageLiteral(resourceName: "Fav.jpg"), for: .normal)
-        }
+                isFav = false
+                favButton.setImage(#imageLiteral(resourceName: "Fav.jpg"), for: .normal)
+                let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                let context = appDelegate.persistentContainer.viewContext
+                let request = NSFetchRequest<NSFetchRequestResult>(entityName: "PeopleFav")
+                //request.predicate = NSPredicate(format: "age = %@", "12")
+                request.returnsObjectsAsFaults = false
+                request.predicate = NSPredicate(format: "name == %@", people.name)
+                do {
+                    let result = try context.fetch(request) as! [PeopleFav]
+                    for i in result{
+                        context.delete(i)
+                    }
+//                    let todelete = result[index]
+//                    context.delete(todelete)
+                    //            for data in result as! [NSManagedObject] {
+                    //                print(data.value(forKey: "username") as! String)
+                    //            }
+                    
+                } catch {
+                    
+                    print("Failed")
+                }
+                do {
+                    try context.save()
+                   
+                } catch {
+                    print("Failed saving")
+                }
+            }
+        
         
         
     }
@@ -134,8 +164,8 @@ extension TableViewCell{
         print(people.name)
                 newUser.setValue(people.url, forKey: "url")
                 newUser.setValue(people.name, forKey: "name")
-                newUser.setValue(true, forKey: "isFav")
-                newUser.setValue("true", forKey: "image")
+                newUser.setValue(id, forKey: "id")
+        
         
         do {
             try context.save()

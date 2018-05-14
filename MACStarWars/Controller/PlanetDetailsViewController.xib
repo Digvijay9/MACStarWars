@@ -12,6 +12,16 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlanetDetailsViewController" customModule="MACStarWars" customModuleProvider="target">
             <connections>
+                <outlet property="climate" destination="0BG-sK-4Ds" id="E0H-Kn-mZs"/>
+                <outlet property="diameter" destination="Brm-Ic-ZeU" id="Sey-hC-jUU"/>
+                <outlet property="gravity" destination="cdB-pV-1cS" id="sh4-7B-SPX"/>
+                <outlet property="name" destination="YCA-wD-4sl" id="S0G-8B-TRg"/>
+                <outlet property="orbital_period" destination="I2h-dT-dqI" id="YcQ-J7-DUH"/>
+                <outlet property="planetImage" destination="Uxq-dw-tsJ" id="jfn-Xe-0IM"/>
+                <outlet property="population" destination="yqc-J0-CF9" id="LLq-u6-C7P"/>
+                <outlet property="rotation_period" destination="QSZ-Fn-WHK" id="xff-AS-GPe"/>
+                <outlet property="surface_water" destination="baW-jO-J3W" id="zHc-oo-Uwp"/>
+                <outlet property="terrain" destination="SYR-hf-KA0" id="6hP-ef-XsX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

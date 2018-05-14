@@ -39,7 +39,10 @@ class TabBarcontroller: UITabBarController , UITabBarControllerDelegate {
     }
     
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        viewController.navigationController?.popToRootViewController(animated: true)
+        if let firstVC = viewController as? ViewController {
+             firstVC.navigationController?.popToRootViewController(animated: true)
+        }
+       
     }
  
 }

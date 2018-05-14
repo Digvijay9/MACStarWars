@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         
         let session = URLSession(configuration: .default)
         let task = session.dataTask(with: urll) { (data, resp, err) in
-            if let error = err{
+              if err != nil{
                 
                 return
             }
@@ -119,6 +119,8 @@ extension TBDataSource : UITableViewDataSource{
         cell.people = people[indexPath.row]
         cell.label.text = people[indexPath.row].name
         cell.selectionStyle = UITableViewCellSelectionStyle.none
+        cell.id = "people"
+        cell.index = indexPath.row
         cell.configureCell()
         return cell
     }

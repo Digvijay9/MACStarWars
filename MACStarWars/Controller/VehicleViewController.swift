@@ -55,7 +55,7 @@
             
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: urll) { (data, resp, err) in
-                if let error = err{
+                 if err != nil{
                     
                     return
                 }
@@ -123,6 +123,8 @@
             cell.label.text = planet[indexPath.row].name
             cell.selectionStyle = UITableViewCellSelectionStyle.none
             cell.imagePerson.image = #imageLiteral(resourceName: "vehicle.jpg")
+            cell.id = "vehicle"
+             cell.index = indexPath.row
             return cell
         }
         func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -136,13 +138,10 @@
     extension VDelegate :UITableViewDelegate{
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             //        tableView.deselectRow(at: indexPath, animated: true)
-            let vc = PersonDetailViewController()
+            let vc = VehicleDetailsViewController()
             vc.url = planet[indexPath.row].url
-            vc.navTitle = planet[indexPath.row].name
-            if let cell = tableView.cellForRow(at: indexPath) as? TableViewCell{
-                vc.image = cell.imagePerson.image
-            }
-            
+     
+  
             navigationController?.show(vc, sender: nil)
         }
         
