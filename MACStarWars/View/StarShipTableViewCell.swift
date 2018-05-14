@@ -1,24 +1,24 @@
 //
-//  TableViewCell.swift
+//  StarShipTableViewCell.swift
 //  MACStarWars
 //
-//  Created by digvijay mallegowda on 5/10/18.
+//  Created by digvijay mallegowda on 5/11/18.
 //  Copyright © 2018 digvijay mallegowda. All rights reserved.
 //
 
 import UIKit
 import CoreData
 
-class TableViewCell: UITableViewCell {
-    var people : People!
+class StarShipTableViewCell: UITableViewCell {
+    weak var delegate: CustomCellUpdater?
+    var index : Int!
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        self.backgroundColor = .white
         setUpCell()
-        
-        favButton.addTarget(self, action: #selector(buttonClicked(_:)), for: .touchUpInside)
+        self.backgroundColor = .white
+        favButton.addTarget(self, action: #selector(butClick(_ : )), for: .touchUpInside)
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -39,39 +39,20 @@ class TableViewCell: UITableViewCell {
         let set = UILabel()
         set.clipsToBounds = true
         set.font = UIFont.systemFont(ofSize: 16)
-//        set.backgroundColor = .red
+        //        set.backgroundColor = .red
         set.translatesAutoresizingMaskIntoConstraints = false
         return set
     }()
     
     var favButton : UIButton = {
         let set = UIButton()
-//        set.backgroundColor = .brown
-        set.setImage(#imageLiteral(resourceName: "Fav.jpg"), for: .normal)
-//        set.setTitle("FAV", for: .normal)
-//        set.clipsToBounds = true
+        set.setImage(#imageLiteral(resourceName: "FavFlip.png"), for: .normal)
         set.translatesAutoresizingMaskIntoConstraints = false
         set.imageView?.contentMode = .scaleAspectFit
         set.isUserInteractionEnabled = true
-       
-    
-//        set.tintColor = .red
         return set
     }()
-    var isFav = false
-    @objc func buttonClicked(_ sender: UIButton){
-        if isFav == false{
-            isFav = true
-            saveFav()
-            favButton.setImage(#imageLiteral(resourceName: "FavFlip.png"), for: .normal)
-            
-        }else{
-            isFav = false
-            favButton.setImage(#imageLiteral(resourceName: "Fav.jpg"), for: .normal)
-        }
-        
-        
-    }
+
     func setUpCell()  {
         self.addSubview(imagePerson)
         self.addSubview(label)
@@ -90,60 +71,49 @@ class TableViewCell: UITableViewCell {
                                      favButton.centerYAnchor.constraint(equalTo: self.centerYAnchor),
                                      favButton.heightAnchor.constraint(equalToConstant: 30)])
     }
-    
-    private var cellSess = URLSession(configuration: .default)
-    func configureCell(){
-        let url = Mics.getImageUrl(for: people.name)
-        cellSess = URLSession(configuration: .default)
-        NetworkService.getImage(from: url, session: cellSess) { (err, img) in
-            if err == nil {
-                DispatchQueue.main.async {
-                    if let image = img {
-                         self.imagePerson.image = image
-                    }
-                   
-                }
-            }
-        }
-      
-    }
-    
-    func unLoadCell() {
-        cellSess.invalidateAndCancel()
-    }
-    
 }
 
-
-
-
-
-
-
-
-
-
-
-
-extension TableViewCell{
-    func saveFav(){
+extension StarShipTableViewCell {
+    @objc func butClick(_ sender : UIButton) {
+        
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
-        let entity = NSEntityDescription.entity(forEntityName: "PeopleFav", in: context)
-        let newUser = NSManagedObject(entity: entity!, insertInto: context)
-        print(people.name)
-                newUser.setValue(people.url, forKey: "url")
-                newUser.setValue(people.name, forKey: "name")
-                newUser.setValue(true, forKey: "isFav")
-                newUser.setValue("true", forKey: "image")
-        
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "PeopleFav")
+        //request.predicate = NSPredicate(format: "age = %@", "12")
+        request.returnsObjectsAsFaults = false
+        do {
+            let result = try context.fetch(request) as! [PeopleFav]
+            print(index)
+            let todelete = result[index]
+            context.delete(todelete)
+//            for data in result as! [NSManagedObject] {
+//                print(data.value(forKey: "username") as! String)
+//            }
+            
+        } catch {
+            
+            print("Failed")
+        }
         do {
             try context.save()
+            self.delegate?.updateTableView(index: index)
         } catch {
             print("Failed saving")
         }
-        
-        
     }
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
