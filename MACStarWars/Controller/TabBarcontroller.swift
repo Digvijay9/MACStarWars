@@ -8,10 +8,11 @@
 
 import UIKit
 
-class TabBarcontroller: UITabBarController {
+class TabBarcontroller: UITabBarController , UITabBarControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.delegate = self
         let vc = ViewController()
         let peopleVC = UINavigationController(rootViewController: vc)
         peopleVC.tabBarItem.image = #imageLiteral(resourceName: "man-figure.png")
@@ -36,6 +37,9 @@ class TabBarcontroller: UITabBarController {
         viewControllers = [peopleVC,planetVC,vehicleVC,starVC,favVC]
         // Do any additional setup after loading the view.
     }
-
+    
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        viewController.navigationController?.popToRootViewController(animated: true)
+    }
  
 }

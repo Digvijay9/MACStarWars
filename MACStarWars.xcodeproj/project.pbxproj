@@ -15,6 +15,8 @@
 		1B24093620A69D8300D919D7 /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B24093420A69D8300D919D7 /* PersonDetailViewController.swift */; };
 		1B24093720A69D8300D919D7 /* PersonDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B24093520A69D8300D919D7 /* PersonDetailViewController.xib */; };
 		1B24093920A6BA2C00D919D7 /* FavFlip.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B24093820A6BA2C00D919D7 /* FavFlip.png */; };
+		1B3561D720A999C1004B6D1F /* PlanetDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3561D520A999C1004B6D1F /* PlanetDetailsViewController.swift */; };
+		1B3561D820A999C1004B6D1F /* PlanetDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B3561D620A999C1004B6D1F /* PlanetDetailsViewController.xib */; };
 		1B708E6120A77FFC0020C7E1 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B708E6020A77FFC0020C7E1 /* ImageCache.swift */; };
 		1B708E6320A948530020C7E1 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B708E6220A948530020C7E1 /* Movie.swift */; };
 		1B708E6520A971D30020C7E1 /* airplane.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B708E6420A971D30020C7E1 /* airplane.png */; };
@@ -29,6 +31,7 @@
 		1B708E7920A9848D0020C7E1 /* vehicle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B708E7820A9848D0020C7E1 /* vehicle.jpg */; };
 		1B708E7B20A9857E0020C7E1 /* starship.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1B708E7A20A9857E0020C7E1 /* starship.jpeg */; };
 		1B708E7D20A9859D0020C7E1 /* StarshipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B708E7C20A9859D0020C7E1 /* StarshipViewController.swift */; };
+		1B708E7F20A9934D0020C7E1 /* launch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B708E7E20A9934C0020C7E1 /* launch.jpg */; };
 		1BD1FEC720A2D4AC00A9F6D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1FEC620A2D4AC00A9F6D2 /* AppDelegate.swift */; };
 		1BD1FEC920A2D4AC00A9F6D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1FEC820A2D4AC00A9F6D2 /* ViewController.swift */; };
 		1BD1FECC20A2D4AC00A9F6D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BD1FECA20A2D4AC00A9F6D2 /* Main.storyboard */; };
@@ -67,6 +70,8 @@
 		1B24093420A69D8300D919D7 /* PersonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
 		1B24093520A69D8300D919D7 /* PersonDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonDetailViewController.xib; sourceTree = "<group>"; };
 		1B24093820A6BA2C00D919D7 /* FavFlip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FavFlip.png; sourceTree = "<group>"; };
+		1B3561D520A999C1004B6D1F /* PlanetDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetailsViewController.swift; sourceTree = "<group>"; };
+		1B3561D620A999C1004B6D1F /* PlanetDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanetDetailsViewController.xib; sourceTree = "<group>"; };
 		1B708E6020A77FFC0020C7E1 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		1B708E6220A948530020C7E1 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		1B708E6420A971D30020C7E1 /* airplane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = airplane.png; sourceTree = "<group>"; };
@@ -81,6 +86,7 @@
 		1B708E7820A9848D0020C7E1 /* vehicle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vehicle.jpg; sourceTree = "<group>"; };
 		1B708E7A20A9857E0020C7E1 /* starship.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = starship.jpeg; sourceTree = "<group>"; };
 		1B708E7C20A9859D0020C7E1 /* StarshipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipViewController.swift; sourceTree = "<group>"; };
+		1B708E7E20A9934C0020C7E1 /* launch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch.jpg; sourceTree = "<group>"; };
 		1BD1FEC320A2D4AC00A9F6D2 /* MACStarWars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MACStarWars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BD1FEC620A2D4AC00A9F6D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BD1FEC820A2D4AC00A9F6D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +141,8 @@
 				1B24092420A5774D00D919D7 /* FavouriteViewController.swift */,
 				1B24093420A69D8300D919D7 /* PersonDetailViewController.swift */,
 				1B24093520A69D8300D919D7 /* PersonDetailViewController.xib */,
+				1B3561D520A999C1004B6D1F /* PlanetDetailsViewController.swift */,
+				1B3561D620A999C1004B6D1F /* PlanetDetailsViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -228,6 +236,7 @@
 				1B708E7220A97E780020C7E1 /* planet.jpg */,
 				1B708E7820A9848D0020C7E1 /* vehicle.jpg */,
 				1B708E7A20A9857E0020C7E1 /* starship.jpeg */,
+				1B708E7E20A9934C0020C7E1 /* launch.jpg */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -343,10 +352,12 @@
 				1B24093920A6BA2C00D919D7 /* FavFlip.png in Resources */,
 				1B708E6B20A972670020C7E1 /* love.png in Resources */,
 				1B708E6520A971D30020C7E1 /* airplane.png in Resources */,
+				1B708E7F20A9934D0020C7E1 /* launch.jpg in Resources */,
 				1B708E6720A971FE0020C7E1 /* caravan.png in Resources */,
 				1B708E7920A9848D0020C7E1 /* vehicle.jpg in Resources */,
 				1BD1FED420A2D4AC00A9F6D2 /* LaunchScreen.storyboard in Resources */,
 				1B708E7B20A9857E0020C7E1 /* starship.jpeg in Resources */,
+				1B3561D820A999C1004B6D1F /* PlanetDetailsViewController.xib in Resources */,
 				1B708E6D20A9778D0020C7E1 /* earth-usa.png in Resources */,
 				1BD1FED120A2D4AC00A9F6D2 /* Assets.xcassets in Resources */,
 				1BD1FECC20A2D4AC00A9F6D2 /* Main.storyboard in Resources */,
@@ -388,6 +399,7 @@
 				1B24093620A69D8300D919D7 /* PersonDetailViewController.swift in Sources */,
 				1BD1FEC720A2D4AC00A9F6D2 /* AppDelegate.swift in Sources */,
 				1B24092A20A579AB00D919D7 /* People.swift in Sources */,
+				1B3561D720A999C1004B6D1F /* PlanetDetailsViewController.swift in Sources */,
 				1B708E7520A9800D0020C7E1 /* Planet.swift in Sources */,
 				1B24092D20A57DF500D919D7 /* Network.swift in Sources */,
 				1B24092520A5774D00D919D7 /* FavouriteViewController.swift in Sources */,
