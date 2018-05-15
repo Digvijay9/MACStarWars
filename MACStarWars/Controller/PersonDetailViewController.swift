@@ -9,7 +9,8 @@
 import UIKit
 
 class PersonDetailViewController: UIViewController {
-    
+    var count = 0
+    var butURL = [Int : Movie]()
     var url : String!
     var navTitle : String!
     var image : UIImage!
@@ -19,13 +20,21 @@ class PersonDetailViewController: UIViewController {
 
                 if let ints = Int(i.numbers) {
                     if ints < 7 {
-                        NetworkService.getMovieDetails(from: i, completion: { (err, movie) in
+                        NetworkService.getMovieDetails(from: i, completion: {[weak self] (err, movie) in
                             if err == nil {
                                 DispatchQueue.main.async {
+                                    guard let this = self else {
+                                        return
+                                    }
                                     if let m = movie {
+                                        let button = this.movieButtons[this.count]
+                                        button.setTitle(m.title, for: .normal)
+                                        this.count += 1
+                                        button.isHidden = false
+                                        this.butURL[button.tag] = m
                                         
-                                        self.filmNames = m
-//                                        self.filmNames?.append(m)
+                                        
+                                       
                                     }
                                 }
                               
@@ -35,14 +44,6 @@ class PersonDetailViewController: UIViewController {
                 }
          
             }
-        }
-    }
-    var filmNames : Movie?{
-        didSet{
-            movieButtons[0].setTitle(filmNames?.title, for: .normal)
-       
-//            setButtonTitle()
-            
         }
     }
 
@@ -105,6 +106,10 @@ class PersonDetailViewController: UIViewController {
                 
             }
         }
+        for i in 0..<6{
+           movieButtons[i].isHidden = true
+        }
+       
      
     }
 
